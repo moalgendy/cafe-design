@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --green:#f8be2a;
+   --white:#fff;
+   --light-white:#aaa;
+   --black:#3d3d3d;
+   --light-bg:#4b4b4b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.top-container {
+  background-image: linear-gradient(
+      90deg,
+      rgba(34, 34, 34, 0.6) 0%,
+      rgba(34, 34, 34, 0.6) 50%,
+      rgba(34, 34, 34, 0.6) 100%
+    ),
+    url("../images/about/Cafe-pic.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sticky {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+  width: 120px;
+}
+
+.navbar {
+  padding: 1.5rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f8be2a;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #f8be2a;
+}
+
+.top-link {
+  margin: 0 20px;
+  color: #fff;
+}
+
+.top-btn {
+  color: #fff;
+  background-color: #f8be2a;
+  border-color: #f8be2a;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8be2a;
+  padding-top: 78px;
+  min-height: calc(100vh - 78px);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.story {
+  background-color: #363636;
+  color: #fff;
+  min-height: 550px;
+  padding-top: 78px;
+}
+
+h2 {
+  color: #f8be2a;
+  font-size: 2.4rem;
+}
+
+.story p {
+  font-size: 1.1rem;
+  line-height: 200%;
+}
+
+img {
+  width: 100%;
+}
+
+.offers {
+  background-color: #111;
+  min-height: 350px;
+  padding-top: 78px;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+}
+
+.offers h3 {
+  text-align: center;
+  color: #f8be2a;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+
+.team {
+  text-align: center;
+  background-color: #363636;
+  color: #fff;
+  min-height: 630px;
+  padding-top: 78px;
+}
+
+.team-members {
+  display: flex;
+  align-items: center;
+}
+
+.team h2 {
+  padding-bottom: 30px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.member {
+  margin-bottom: 20px;
+}
+.member:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.customers {
+  min-height: 480px;
+  background-color: #111;
+  padding-top: 78px;
+}
+
+.customers h2 {
+  margin-bottom: 30px;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  min-height: 380px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 20px 200px;
+  position: absolute;
+  /* bottom: 8px; */
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #363636;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot {
+  background-color: #f8be2a;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 6.5s;
+  animation-name: fade;
+  animation-duration: 6.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.footer {
+  position: relative;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 50%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("../images/about/footer-background.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  /* min-height: 430px; */
+  padding-top: 78px;
+}
+
+#footer-logo {
+  width: 40%;
+}
+
+.info img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.info {
+  padding: 10px 0;
+}
+
+.footer-top {
+  margin-bottom: 20px;
+}
+
+footer h3,
+.time,
+#bottom {
+  color: #f8be2a;
+}
+
+.social-icon {
+  width: 30px;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .team {
+    min-height: 510px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link,
+  .top-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo-link {
+    z-index: 1;
+  }
+
+  #logo {
+    width: 100px;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 190, 42 %29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+  .navbar-light .navbar-toggler-icon.nav-toggler-alt {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+  .navbar-light .navbar-toggler {
+    outline: none;
+  }
+
+  .show-nav {
+    top: 0;
+    padding-top: 78px;
+    background-color: #f8be2a;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  .story p {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  .story,
+  .team {
+    padding-top: 30px;
+  }
+
+  .story {
+    min-height: 400px;
+  }
+
+  .offer p {
+    font-size: 1rem;
+  }
+
+  .info {
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .text {
+    padding: 12px 0;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    z-index: 1;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #111;
+    padding: 20px 0;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+  }
+
+  .top-btn {
+    background-color: #111 !important;
+    color: #f8be2a !important;
+    border-color: #111 !important;
+  }
+
+  .offers {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  #footer-logo {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .middle {
+    border-right: 2px solid #f8be2a;
+  }
+
+  .bottom-details {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
+}
+
+/* On smaller screens, decrease text size for slideshow*/
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
